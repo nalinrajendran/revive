@@ -86,7 +86,7 @@ const ChooseUser = ({ visitor }) => {
     <StyledContainer>
       <Container>
         <Grid container spacing={2} justifyContent="center">
-          <Grid item xs={12} sm={6} md={4}>
+          {/* <Grid item xs={12} sm={6} md={4}>
             <div onClick={() => navigateHandler("Admin")}>
               <StyledPaper elevation={3}>
                 <Box mb={2}>
@@ -98,7 +98,7 @@ const ChooseUser = ({ visitor }) => {
                 Login as an administrator to access the dashboard to manage app data.
               </StyledPaper>
             </div>
-          </Grid>
+          </Grid> */}
           <Grid item xs={12} sm={6} md={4}>
             <StyledPaper elevation={3}>
               <div onClick={() => navigateHandler("Student")}>

@@ -17,9 +17,8 @@ const Homepage = () => {
                         <StyledTitle>
                             Welcome to
                             <br />
-                            School Management
-                            <br />
-                            System
+                            Study
+                            Sync
                         </StyledTitle>
                         <StyledText>
                             Streamline school management, class organization, and add students and faculty.
@@ -32,19 +31,19 @@ const Homepage = () => {
                                     Login
                                 </LightPurpleButton>
                             </StyledLink>
-                            <StyledLink to="/chooseasguest">
+                            {/* <StyledLink to="/chooseasguest">
                                 <Button variant="outlined" fullWidth
                                     sx={{ mt: 2, mb: 3, color: "#7f56da", borderColor: "#7f56da" }}
                                 >
                                     Login as Guest
                                 </Button>
-                            </StyledLink>
-                            <StyledText>
+                            </StyledLink> */}
+                            {/* <StyledText>
                                 Don't have an account?{' '}
                                 <Link to="/Adminregister" style={{color:"#550080"}}>
                                     Sign up
                                 </Link>
-                            </StyledText>
+                            </StyledText> */}
                         </StyledBox>
                     </StyledPaper>
                 </Grid>

@@ -25,10 +25,7 @@ const AddStudent = ({ situation }) => {
     const [className, setClassName] = useState('')
     const [sclassName, setSclassName] = useState('')
 
-    const [gender, setGender] = useState('');
-    const [phone, setPhone] = useState('');
-    const [address, setAddress] = useState('');
-    const [dob, setDob] = useState('');
+
 
     const adminID = currentUser._id
     const role = "Student"
@@ -104,7 +101,7 @@ const AddStudent = ({ situation }) => {
                     <label>Name</label>
                     <input className="registerInput" type="text" placeholder="Enter student's name..."
                         value={name}
-                        onChange={(event) => setName(event.target.value)}
+                        onChange={(event) => setName(event.target.value.toLowerCase())}
                         autoComplete="name" required />
 
                     {
@@ -137,11 +134,6 @@ const AddStudent = ({ situation }) => {
                         onChange={(event) => setPassword(event.target.value)}
                         autoComplete="new-password" required />
 
-                    <label>Address</label>
-                    <input className="registerInput" type="text" placeholder="Enter student's address..."
-                        value={address}
-                        onChange={(event) => setAddress(event.target.value)}
-                        required />
 
                     <button className="registerButton" type="submit" disabled={loader}>
                         {loader ? (

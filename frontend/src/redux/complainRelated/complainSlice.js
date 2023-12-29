@@ -7,6 +7,8 @@ const initialState = {
     response: null,
 };
 
+
+
 const complainSlice = createSlice({
     name: 'complain',
     initialState,
@@ -31,6 +33,8 @@ const complainSlice = createSlice({
         }
     },
 });
+
+
 
 export const {
     getRequest,

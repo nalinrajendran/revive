@@ -27,10 +27,6 @@ const studentSchema = new mongoose.Schema({
         type: String,
         default: "Student"
     },
-    address: {
-        type: String,
-
-    },
     examResult: [
         {
             subName: {
